@@ -79,12 +79,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [GitHub](#)   <!-- Add your GitHub profile link -->
 - [Email](#)    <!-- Add your email address -->
 
-## 💡 Future Updates
-- [ ] Add blog section
-- [ ] Implement authentication for admin dashboard
-- [ ] Add CMS for easy content updates
-- [ ] Integrate more interactive elements
-- [ ] Add project filtering by technology
-
 ---
 Made with ❤️ and React

@@ -75,9 +75,9 @@ To fix a bug or enhance an existing module, follow these steps:
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## 🤝 Connect with Me
-- [LinkedIn](#) <!-- Add your LinkedIn profile link -->
-- [GitHub](#)   <!-- Add your GitHub profile link -->
-- [Email](#)    <!-- Add your email address -->
+- [https://www.linkedin.com/in/mohammadsarfarazafzal/](#)
+- [https://github.com/mohammadsarfarazafzal/](#)
+- [mohammadsarfarazafzal@gmail.com](#)
 
 ---
 Made with ❤️ and React

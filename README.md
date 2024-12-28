@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website repository! This website showcases my projects, skills, and experience as a Full Stack Developer specializing in Web Development, Web3 technologies, and Machine Learning.
 
 ## 🚀 Live Demo
-[View Live Demo](#) <!-- Add your deployed site link when ready -->
+[View Live Demo]([#](https://mohammadsarfarazafzal.github.io/))
 
 ## ⚡ Tech Stack
 - React with Vite
@@ -34,12 +34,12 @@ Welcome to my personal portfolio website repository! This website showcases my p
 ## 🛠️ Installation Steps
 1. Clone the repository
 ```bash
-git clone https://github.com/mohammadsarfarazafzal/portfolio.git
+git clone https://github.com/mohammadsarfarazafzal/mohammadsarfarazafzal.github.io.git
 ```
 
 2. Change the working directory
 ```bash
-cd portfolio
+cd mohammadsarfarazafzal.github.io
 ```
 
 3. Install dependencies

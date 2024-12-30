@@ -10,7 +10,7 @@ const About = ({id}) => {
             <div className='text-2xl text-[var(--color-head-text)] font-bold mb-6'><span className='text-lg font-medium text-[var(--color-hover)]'>01.</span> About Me</div>
             <div className='flex lg:flex-row flex-col-reverse items-center'>
                 <div className='flex flex-col'>
-                    <div className='text-lg text-[var(--color-text)] mb-8 text-justify'>Hi there!
+                    <div className='text-lg text-[var(--color-text)] mb-8 lg:w-2/3 text-justify'>Hi there!
 
 I'm Md Sarfaraz Afzal, a final-year Computer Science Engineering student at <a href="https://www.google.com/search?q=mckvie&oq=mckvie&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg9MgYIAhBFGDzSAQc4MDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" className="text-[var(--color-hover)] hover:underline">MCKVIE</a>, passionate about coding, problem-solving, and building impactful solutions.<br /><br />
 

@@ -13,6 +13,7 @@
 html{
   scrollbar-width: thin;
   scrollbar-color: rgba(155, 155, 155, 0.5) var(--color-background);
+  background-color: var(--color-background);
 }
 
 html::-webkit-scrollbar {

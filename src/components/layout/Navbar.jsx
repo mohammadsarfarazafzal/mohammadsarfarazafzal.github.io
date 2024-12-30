@@ -7,8 +7,8 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     
     const menuVariants = {
-        hidden: { x: "-100%", opacity: 0 },
-        visible: { x: 0, opacity: 1 },
+        hidden: { x: "100%", opacity: 0 },
+        visible: { x: "25%", opacity: 1 },
     };
 
     const itemVariants = {
@@ -17,8 +17,8 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-[var(--color-background)]">
-            <div className="py-7 px-12">
+        <nav className="bg-[var(--color-background)] fixed top-0 left-0 right-0 z-50">
+            <div className="py-7 lg:px-12 px-6">
                 <motion.div
                     className="flex justify-between items-center h-14"
                     initial="hidden"
@@ -55,7 +55,7 @@ function Navbar() {
                         animate={{ rotate: isMenuOpen ? 90 : 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        <Menu className="h-6 w-6" />
+                        <Menu className="h-12 w-12 text-[--color-hover]" />
                     </motion.button>
                     <div className="hidden md:flex gap-8 items-center">
                         {["About", "Projects", "Skills", "Contact"].map(
@@ -73,7 +73,7 @@ function Navbar() {
                             )
                         )}
                         <motion.a
-                            href="../../../src/assets/MdSarfarazAfzal.pdf"
+                            href="/MdSarfarazAfzal.pdf"
                             target="_blank"
                             variants={itemVariants}
                         >
@@ -82,42 +82,39 @@ function Navbar() {
                     </div>
                 </motion.div>
             </div>
-
-            {/* Mobile menu with Framer Motion */}
             <AnimatePresence>
                 {isMenuOpen && (
                     <motion.div
-                        className="md:hidden"
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                        variants={menuVariants}
-                        transition={{ type: "spring", duration: 0.5 }}
-                    >
-                        <div className="px-2 pt-2 pb-3 space-y-1">
-                            {["About", "Projects", "Skills", "Contact"].map((section) => (
+                    className="md:hidden h-full w-[75%] fixed bg-[var(--color-background)] z-10"
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    variants={menuVariants}
+                    transition={{ type: "spring", duration: 0.5 }}
+                >
+                    <div className="flex flex-col gap-4 items-center justify-center h-[75%]">
+                    {["About", "Projects", "Skills", "Contact"].map(
+                            (section, index) => (
                                 <motion.a
                                     key={section}
                                     href={`#${section.toLowerCase()}`}
-                                    className="block px-3 py-2 text-[var(--color-text)] hover:bg-gray-50"
-                                    variants={itemVariants}
-                                    initial="hidden"
-                                    animate="visible"
-                                    exit="hidden"
-                                    whileHover={{ scale: 1.1 }}
+                                    className="text-[var(--color-text)] transition ease-in-out hover:text-[var(--color-hover)] text-2xl"
                                 >
+                                    <span className="text-[var(--color-hover)]">{`0${index + 1
+                                        }.`}</span>{" "}
                                     {section}
                                 </motion.a>
-                            ))}
-                            <a
-                                href="../../../src/assets/MdSarfarazAfzal.pdf"
-                                target="_blank"
-                                className="block px-3 py-2"
-                            >
-                                <Button name={"Resume"} />
-                            </a>
-                        </div>
-                    </motion.div>
+                            )
+                        )}
+                        <a
+                            href="/MdSarfarazAfzal.pdf"
+                            target="_blank"
+                            className="text-2xl"
+                        >
+                            <Button name={"Resume"} />
+                        </a>
+                    </div>
+                </motion.div>
                 )}
             </AnimatePresence>
         </nav>

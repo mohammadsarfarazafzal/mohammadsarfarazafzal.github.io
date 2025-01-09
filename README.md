@@ -65,7 +65,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments 🙌
 
-- This portfolio design was inspired by [Brittany Chiang](https://github.com/bchiang7). A big thanks to her for providing a beautiful foundation that inspired some of the design concepts in this project.
+- This portfolio design was inspired by [Brittany Chiang](https://brittanychiang.com/). A big thanks to her for providing a beautiful foundation that inspired some of the design concepts in this project.
 
 
 ---

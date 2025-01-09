@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website repository! This website showcases my projects, skills, and experience as a Full Stack Developer specializing in Web Development, Web3 technologies, and Machine Learning.
 
 ## 🚀 Live Demo
-[View Live Demo]([#](https://mohammadsarfarazafzal.github.io/))
+[View Live Demo](https://mohammadsarfarazafzal.github.io/)
 
 ## ⚡ Tech Stack
 - React with Vite
@@ -59,25 +59,13 @@ npm run dev
 npm run build
 ```
 
-## 💻 Development
-Want to contribute? Great!
-
-To fix a bug or enhance an existing module, follow these steps:
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request
-
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## 🤝 Connect with Me
-- [https://www.linkedin.com/in/mohammadsarfarazafzal/](#)
-- [https://github.com/mohammadsarfarazafzal/](#)
-- [mohammadsarfarazafzal@gmail.com](#)
+- [LinkedIn](https://www.linkedin.com/in/mohammadsarfarazafzal/)
+- [GitHub](https://github.com/mohammadsarfarazafzal/)
+- [GMail](mohammadsarfarazafzal@gmail.com)
 
 ---
 Made with ❤️ and React

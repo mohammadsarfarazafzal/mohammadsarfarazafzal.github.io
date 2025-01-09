@@ -8,9 +8,8 @@ Welcome to my personal portfolio website repository! This website showcases my p
 ## ⚡ Tech Stack
 - React with Vite
 - Tailwind CSS for styling
-- React Router DOM for navigation
 - Framer Motion for animations
-- Lucide React for icons
+- Lucide React and React Icons for icons
 
 ## 🎯 Features
 - Responsive design for all devices
@@ -18,18 +17,13 @@ Welcome to my personal portfolio website repository! This website showcases my p
 - Animated page transitions
 - Project showcase with live demos
 - Skills visualization
-- Contact form
-- Dark/Light mode toggle
 
 ## 📋 Project Sections
 - **Hero Section**: Introduction and social links
 - **About**: Professional background and interests
-- **Projects**: Showcase of my work including:
-  - Web development projects
-  - Web3 applications
-  - Machine Learning implementations
+- **Projects**: Showcase of my work
 - **Skills**: Technical expertise and tools
-- **Contact**: Get in touch form
+- **Contact**: Get in touch 
 
 ## 🛠️ Installation Steps
 1. Clone the repository
@@ -66,6 +60,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [LinkedIn](https://www.linkedin.com/in/mohammadsarfarazafzal/)
 - [GitHub](https://github.com/mohammadsarfarazafzal/)
 - [GMail](mohammadsarfarazafzal@gmail.com)
+
+---
+
+## Acknowledgments 🙌
+
+- This portfolio design was inspired by [Brittany Chiang](https://github.com/bchiang7). A big thanks to her for providing a beautiful foundation that inspired some of the design concepts in this project.
+
 
 ---
 Made with ❤️ and React

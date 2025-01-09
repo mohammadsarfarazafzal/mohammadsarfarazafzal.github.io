@@ -6,7 +6,7 @@ const Card = ({ name, desc, img, tech, github, link }) => {
         <motion.div initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeIn" }}
-            className="my-16">
+            className="mb-16">
             <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
                 <div id='projectCover' className="w-full md:w-1/2">
                     <a href={link}><img src={img} alt={name} className="w-full h-auto rounded-lg" /></a>

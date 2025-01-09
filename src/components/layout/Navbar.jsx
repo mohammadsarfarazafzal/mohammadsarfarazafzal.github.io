@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu } from "lucide-react";
 import Button from "../ui/Button";
+import { Link } from "react-scroll";
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -16,8 +17,8 @@ function Navbar() {
         visible: { y: 0, opacity: 1 },
     };
 
-    return (
-        <nav className="bg-[var(--color-background)] fixed top-0 left-0 right-0 z-50">
+    return (<>
+        <nav className="bg-[#0a192fbd] font-mono relative top-0 left-0 z-10 backdrop-blur-md">
             <div className="py-7 lg:px-12 px-6">
                 <motion.div
                     className="flex justify-between items-center h-14"
@@ -25,7 +26,9 @@ function Navbar() {
                     animate="visible"
                     variants={{ visible: { transition: { type: "tween", staggerChildren: 0.15, ease: "easeIn", duration: 0.15 } } }}
                 >
-                    <motion.a href="#" variants={itemVariants}>
+                    
+                    <motion.div variants={itemVariants}>
+                        <Link to="/" smooth={true} duration={500} className="cursor-pointer">
                         <span className="text-xl font-bold">
                             <svg
                                 version="1.1"
@@ -47,10 +50,11 @@ function Navbar() {
                                 />
                             </svg>
                         </span>
-                    </motion.a>
+                        </Link>
+                    </motion.div>
                     <motion.button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className="md:hidden p-2"
+                        className="md:hidden p-2 relative top-0 right-0 z-50"
                         initial={{ rotate: 0 }}
                         animate={{ rotate: isMenuOpen ? 90 : 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -60,16 +64,17 @@ function Navbar() {
                     <div className="hidden md:flex gap-8 items-center">
                         {["About", "Projects", "Skills", "Contact"].map(
                             (section, index) => (
-                                <motion.a
+                                <motion.div
                                     key={section}
-                                    href={`#${section.toLowerCase()}`}
                                     className="text-[var(--color-text)] transition ease-in-out hover:text-[var(--color-hover)]"
                                     variants={itemVariants}
                                 >
+                                    <Link to={`${section.toLowerCase()}`} smooth={true} duration={500} className="cursor-pointer">   
                                     <span className="text-[var(--color-hover)]">{`0${index + 1
                                         }.`}</span>{" "}
                                     {section}
-                                </motion.a>
+                                    </Link>
+                                </motion.div>
                             )
                         )}
                         <motion.a
@@ -77,7 +82,9 @@ function Navbar() {
                             target="_blank"
                             variants={itemVariants}
                         >
+                            <div className="w-24 h-12">
                             <Button name={"Resume"} />
+                            </div>
                         </motion.a>
                     </div>
                 </motion.div>
@@ -85,39 +92,44 @@ function Navbar() {
             <AnimatePresence>
                 {isMenuOpen && (
                     <motion.div
-                    className="md:hidden h-full w-[75%] fixed bg-[var(--color-background)] z-10"
+                    className="md:hidden h-screen bg-[#112240] font-mono fixed top-0 right-0 left-0 z-20 w-[80%]"
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
                     variants={menuVariants}
                     transition={{ type: "spring", duration: 0.5 }}
                 >
-                    <div className="flex flex-col gap-4 items-center justify-center h-[75%]">
+                    <div className="flex flex-col gap-16 items-center justify-center h-[95%]">
                     {["About", "Projects", "Skills", "Contact"].map(
                             (section, index) => (
-                                <motion.a
+                                <motion.div
                                     key={section}
-                                    href={`#${section.toLowerCase()}`}
                                     className="text-[var(--color-text)] transition ease-in-out hover:text-[var(--color-hover)] text-2xl"
                                 >
+                                    <Link onClick={() => setIsMenuOpen(false)} to={`${section.toLowerCase()}`} offset={-50} smooth={true} duration={500} className="cursor-pointer">
                                     <span className="text-[var(--color-hover)]">{`0${index + 1
                                         }.`}</span>{" "}
                                     {section}
-                                </motion.a>
+                                    </Link>
+                                </motion.div>
                             )
                         )}
+                        <div className="w-32 h-16">
                         <a
                             href="/MdSarfarazAfzal.pdf"
                             target="_blank"
                             className="text-2xl"
+                            onClick={() => setIsMenuOpen(false)}
                         >
                             <Button name={"Resume"} />
                         </a>
+                        </div>
                     </div>
                 </motion.div>
                 )}
             </AnimatePresence>
         </nav>
+        </>
     );
 }
 

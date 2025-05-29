@@ -10,7 +10,7 @@ const Hero = () => {
   };
   return (
     <motion.div
-      className="lg:px-28 px-8 h-screen md:pt-[25vh] pt-[5vh]"
+      className="lg:px-28 px-8 h-screen md:pt-[25vh] pt-[15vh]"
       initial="hidden"
       animate="visible"
       variants={{

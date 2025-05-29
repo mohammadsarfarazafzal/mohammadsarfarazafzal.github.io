@@ -8,7 +8,7 @@ const About = ({ id }) => {
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.1, ease: "easeIn" }}
-      className="lg:px-28 px-8 py-12"
+      className="lg:px-28 px-8 pb-12"
       id={id}
     >
       <div className="text-2xl text-[var(--color-head-text)] font-bold mb-6">

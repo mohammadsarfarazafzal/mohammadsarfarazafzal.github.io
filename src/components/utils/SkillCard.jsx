@@ -30,7 +30,7 @@ const getSkillName = (Icon) => {
     SiTensorflow: 'TensorFlow'
   };
 
-  return skillNames[Icon.name] || Icon.name;
+  return skillNames[Icon];
 };
 
 const SkillCard = ({ icon: Icon }) => (

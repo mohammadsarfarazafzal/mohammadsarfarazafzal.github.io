@@ -35,7 +35,7 @@ const Hero = () => {
         variants={itemVariants}
         className="text-3xl md:text-4xl text-[var(--color-text)] mb-8"
       >
-        Specializing in Web Development, Web3, and Machine Learning.
+        Specializing in Web Development and Machine Learning.
       </motion.p>
       <motion.p
         variants={itemVariants}

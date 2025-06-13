@@ -62,7 +62,7 @@ function Navbar() {
                         <Menu className="h-12 w-12 text-[--color-hover]" />
                     </motion.button>
                     <div className="hidden md:flex gap-8 items-center">
-                        {["About", "Projects", "Skills", "Contact"].map(
+                        {["About", "Projects", "Skills", "Experience", "Contact"].map(
                             (section, index) => (
                                 <motion.div
                                     key={section}
@@ -100,7 +100,7 @@ function Navbar() {
                     transition={{ type: "spring", duration: 0.5 }}
                 >
                     <div className="flex flex-col gap-16 items-center justify-center h-[95%]">
-                    {["About", "Projects", "Skills", "Contact"].map(
+                    {["About", "Projects", "Skills", "Experience", "Contact"].map(
                             (section, index) => (
                                 <motion.div
                                     key={section}

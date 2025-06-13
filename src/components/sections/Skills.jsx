@@ -2,51 +2,60 @@ import React from "react";
 import { motion } from "framer-motion";
 import SkillCard from "../utils/SkillCard";
 import {
-  SiReact,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
+  SiC,
+  SiPython,
   SiJavascript,
-  SiJupyter,
   SiHtml5,
   SiCss3,
-  SiRedhat,
-  SiTensorflow,
+  SiReact,
+  SiNextdotjs,
   SiTailwindcss,
   SiBootstrap,
+  SiNodedotjs,
+  SiExpress,
+  SiSpringboot,
+  SiHibernate,
+  SiMysql,
+  SiMongodb,
+  SiMongoose,
   SiGit,
-  SiPython,
   SiGithub,
-  SiC,
-  SiCanva
+  SiEclipseide,
+  SiIntellijidea,
+  SiJupyter,
+  SiPostman,
+  SiRedhat,
+  SiTensorflow,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
 const Skills = ({ id }) => {
-  const skills = [
-    SiReact,
-    SiNodedotjs,
-    SiExpress,
-    SiMongodb,
-    SiMongoose,
-    SiJavascript,
-    SiJupyter,
-    SiHtml5,
-    SiCss3,
-    SiRedhat,
-    SiTensorflow,
-    SiTailwindcss,
-    SiBootstrap,
-    SiGit,
-    VscVscode,
-    SiPython,
-    SiGithub,
-    FaJava,
-    SiC,
-    SiCanva
+  const skillCategories = [    {
+      title: "Programming Languages",
+      skills: [SiC, FaJava, SiPython, SiJavascript]
+    },
+    {
+      title: "Frontend Development",
+      skills: [SiHtml5, SiCss3, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap]
+    },
+    {
+      title: "Backend Development",
+      skills: [SiNodedotjs, SiExpress, SiSpringboot, SiHibernate]
+    },
+    {
+      title: "Databases",
+      skills: [SiMysql, SiMongodb, SiMongoose]
+    },
+    {
+      title: "Development Tools",
+      skills: [SiGit, SiGithub, SiEclipseide, VscVscode, SiIntellijidea, SiJupyter]
+    },    {
+      title: "Additional Tools",
+      skills: [SiPostman, SiRedhat, SiTensorflow]
+    }
   ];
+
   return (
     <motion.div
       initial={{ y: 50, opacity: 0 }}
@@ -56,22 +65,26 @@ const Skills = ({ id }) => {
       className="lg:px-28 px-8 my-16 flex xl:flex-row flex-col w-full xl:justify-between gap-16"
       id={id}
     >
-        <div className="flex flex-col xl:w-1/2 w-auto">
-          <div className='text-2xl text-[var(--color-head-text)] font-bold mb-6'><span className='text-lg font-medium text-[var(--color-hover)]'>03.</span> Some technologies I've worked with:</div>
-          <div className="flex flex-wrap justify-center items-center">
-          {skills.map((skill, index) => (
-            <SkillCard icon={skill} />
-          ))}
-          </div>
+      <div className="flex flex-col w-full">        
+        <div className='text-2xl text-[var(--color-head-text)] font-bold mb-6'>
+          <span className='text-lg font-medium text-[var(--color-hover)]'>03. </span> 
+          Technical Skills
         </div>
-        <div className="flex flex-col justify-start gap-10">
-        <div className='text-2xl text-[var(--color-head-text)] font-bold mb-6'>Where I've worked:</div>
-          <div className="flex justify-center items-center">
-          <a
-            href="https://www.mckvie.edu.in/"
-          ><img src="/mckv.png" alt="mckvielogo" className="md:w-96 md:h-96 w-64 h-64" /></a>
-          </div>
+        
+        <div className="flex flex-wrap justify-start gap-8">
+          {skillCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="bg-[var(--color-card-bg)] p-6 rounded-lg flex-grow basis-[calc(100%-2rem)] md:basis-[calc(50%-2rem)] lg:basis-[calc(33.333%-2rem)]">
+              <h3 className="text-[var(--color-hover)] font-semibold mb-4">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-4">
+                {category.skills.map((SkillIcon, skillIndex) => (
+                  <SkillCard key={skillIndex} icon={SkillIcon} />
+                ))}
+              </div>
+            </div>          ))}
         </div>
+      </div>
     </motion.div>
   );
 };

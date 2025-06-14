@@ -29,8 +29,7 @@ const About = ({ id }) => {
           Currently, I’m refining my Data Structures and Algorithms knowledge
           while exploring Web3 technologies to build innovative decentralized
           applications. My goal is to become a versatile full-stack developer,
-          combining my expertise in web development, machine learning, and
-          blockchain to create meaningful digital experiences.
+          combining my expertise in web development and machine learning to create meaningful digital experiences.
           <br />
           <br />
           Outside of coding, I enjoy gaming and watching movies, which often

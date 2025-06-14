@@ -31,28 +31,62 @@ import { FaJava } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
 const Skills = ({ id }) => {
-  const skillCategories = [    {
+  const skillCategories = [
+    {
       title: "Programming Languages",
-      skills: [SiC, FaJava, SiPython, SiJavascript]
+      skills: [
+        { icon: SiC, name: 'C' },
+        { icon: FaJava, name: 'Java' },
+        { icon: SiPython, name: 'Python' },
+        { icon: SiJavascript, name: 'JavaScript' }
+      ]
     },
     {
       title: "Frontend Development",
-      skills: [SiHtml5, SiCss3, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap]
+      skills: [
+        { icon: SiHtml5, name: 'HTML5' },
+        { icon: SiCss3, name: 'CSS3' },
+        { icon: SiReact, name: 'React' },
+        { icon: SiNextdotjs, name: 'Next.js' },
+        { icon: SiTailwindcss, name: 'Tailwind CSS' },
+        { icon: SiBootstrap, name: 'Bootstrap' }
+      ]
     },
     {
       title: "Backend Development",
-      skills: [SiNodedotjs, SiExpress, SiSpringboot, SiHibernate]
+      skills: [
+        { icon: SiNodedotjs, name: 'Node.js' },
+        { icon: SiExpress, name: 'Express.js' },
+        { icon: SiSpringboot, name: 'Spring Boot' },
+        { icon: SiHibernate, name: 'Hibernate' }
+      ]
     },
     {
       title: "Databases",
-      skills: [SiMysql, SiMongodb, SiMongoose]
+      skills: [
+        { icon: SiMysql, name: 'MySQL' },
+        { icon: SiMongodb, name: 'MongoDB' },
+        { icon: SiMongoose, name: 'Mongoose' }
+      ]
     },
     {
       title: "Development Tools",
-      skills: [SiGit, SiGithub, SiEclipseide, VscVscode, SiIntellijidea, SiJupyter]
-    },    {
+      skills: [
+        { icon: SiGit, name: 'Git' },
+        { icon: SiGithub, name: 'GitHub' },
+        { icon: SiEclipseide, name: 'Eclipse' },
+        { icon: VscVscode, name: 'VS Code' },
+        { icon: SiIntellijidea, name: 'IntelliJ IDEA' },
+        { icon: SiJupyter, name: 'Jupyter' }
+      ]
+    },
+    {
       title: "Additional Tools",
-      skills: [SiPostman, SiRedhat, SiTensorflow]
+      skills: [
+        { icon: SiPostman, name: 'Postman' },
+        { icon: SiRedhat, name: 'Red Hat' },
+        { icon: SiTensorflow, name: 'TensorFlow' }
+      ]
     }
   ];
 
@@ -78,11 +112,16 @@ const Skills = ({ id }) => {
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-4">
-                {category.skills.map((SkillIcon, skillIndex) => (
-                  <SkillCard key={skillIndex} icon={SkillIcon} />
+                {category.skills.map((skill, skillIndex) => (
+                  <SkillCard 
+                    key={skillIndex} 
+                    icon={skill.icon} 
+                    name={skill.name}
+                  />
                 ))}
               </div>
-            </div>          ))}
+            </div>
+          ))}
         </div>
       </div>
     </motion.div>

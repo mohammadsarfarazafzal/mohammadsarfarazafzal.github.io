@@ -42,8 +42,7 @@ const Hero = () => {
         className="text-lg text-[var(--color-text)] mb-8 text-justify"
       >
         I’m a final-year Computer Science student from <HoverLink text={"MCKVIE"} link={"https://www.mckvie.edu.in/"}/>
-        , with a keen interest in web development, machine learning, and
-        blockchain technologies. Eager to take on challenges, I’m passionate
+        , with a keen interest in web development and machine learning. Eager to take on challenges, I’m passionate
         about creating meaningful digital experiences. When I’m not coding,
         you’ll find me enjoying gaming or catching up on movies.
       </motion.p>

@@ -99,25 +99,34 @@ const Skills = ({ id }) => {
       className="lg:px-28 px-8 my-16 flex xl:flex-row flex-col w-full xl:justify-between gap-16"
       id={id}
     >
-      <div className="flex flex-col w-full">        
+      <div className="flex flex-col w-full">
         <div className='text-2xl text-[var(--color-head-text)] font-bold mb-6'>
           <span className='text-lg font-medium text-[var(--color-hover)]'>03. </span> 
           Technical Skills
         </div>
         
-        <div className="flex flex-wrap justify-start gap-8">
+        <div className="flex flex-wrap gap-8">
           {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-[var(--color-card-bg)] p-6 rounded-lg flex-grow basis-[calc(100%-2rem)] md:basis-[calc(50%-2rem)] lg:basis-[calc(33.333%-2rem)]">
-              <h3 className="text-[var(--color-hover)] font-semibold mb-4">
+            <div 
+              key={categoryIndex} 
+              className="bg-[var(--color-card-bg)] p-6 rounded-lg 
+                flex-grow basis-[calc(100%-2rem)] md:basis-[calc(50%-2rem)] 
+                lg:basis-[calc(33.333%-2rem)]"
+            >
+              <h3 className="text-[var(--color-hover)] font-semibold mb-6">
                 {category.title}
               </h3>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-6">
                 {category.skills.map((skill, skillIndex) => (
-                  <SkillCard 
-                    key={skillIndex} 
-                    icon={skill.icon} 
-                    name={skill.name}
-                  />
+                  <div 
+                    key={skillIndex}
+                    className="flex-grow-0 basis-[calc(33.333%-1rem)] sm:basis-[calc(25%-1.125rem)]"
+                  >
+                    <SkillCard 
+                      icon={skill.icon} 
+                      name={skill.name}
+                    />
+                  </div>
                 ))}
               </div>
             </div>

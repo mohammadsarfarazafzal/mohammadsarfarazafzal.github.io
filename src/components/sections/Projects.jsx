@@ -18,15 +18,26 @@ const Projects = ({id}) => {
             <div className='text-2xl text-[var(--color-head-text)] font-bold mb-12 self-start'>
                 <span className='text-lg font-medium text-[var(--color-hover)]'>02.</span> Featured Projects
             </div>
+            
+            <Card 
+                name={"Full Stack Restaurant Web Application"} 
+                desc={"Collaboratively built a responsive full stack web application for local restaurants. Users can create accounts, book tables, order food items and track their order. Admin can manage everything from adding food items to handling orders from an admin panel."} 
+                img={"/restaurant.png"} 
+                tech={["React.js", "Express.js", "MongoDB", "Node.js", "TailwindCSS", "Postman", "Git"]} 
+                github={"https://github.com/mohammadsarfarazafzal/restaurant-web-app"} 
+                link={"https://spicytouch.onrender.com"} 
+            />
             <Card 
                 name={"Acapellas"} 
                 desc={"An innovative audio player app inspired by Spotify that offers a unique experience by allowing users to listen to songs without music, focusing solely on vocals. Built using React, it highlights creativity and functionality in modern app development."} 
                 img={"/acapellas.png"} 
-                tech={["React", "CSS3", "Git", "GitHub", "TailwindCSS"]} 
+                tech={["React.js", "CSS3", "Git", "GitHub", "TailwindCSS"]} 
                 github={"https://github.com/mohammadsarfarazafzal/acapellas"} 
                 link={"https://mohammadsarfarazafzal.github.io/acapellas/"} 
             />
-            <Card 
+            {isShow ? (
+                <div className='flex flex-col items-center'>
+                    <Card 
                 name={"Taqs"} 
                 desc={"Taqs is a responsive weather web app delivering real-time updates on temperature, humidity, and wind speed. Users can check weather conditions via location detection or manual input. With its interactive UI and device optimization, Taqs offers a seamless and user-friendly experience"} 
                 img={"/taqs.png"} 
@@ -34,8 +45,6 @@ const Projects = ({id}) => {
                 github={"https://github.com/mohammadsarfarazafzal/taqs"} 
                 link={"https://taqs.onrender.com"} 
             />
-            {isShow ? (
-                <div className='flex flex-col items-center'>
                     <Card 
                         name={"Google Result Page Clone Portfolio"} 
                         desc={"Crafted a personal portfolio website inspired by the Google Search Result Page as it appeared in early 2024. This project highlights my front-end development skills with a focus on responsive design, creativity, and attention to detail."} 

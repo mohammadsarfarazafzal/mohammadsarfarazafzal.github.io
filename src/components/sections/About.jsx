@@ -27,7 +27,7 @@ const About = ({ id }) => {
           <br />
           <br />
           Currently, I’m refining my Data Structures and Algorithms knowledge
-          while exploring Web3 technologies to build innovative decentralized
+          while exploring JAVA to build innovative
           applications. My goal is to become a versatile full-stack developer,
           combining my expertise in web development and machine learning to create meaningful digital experiences.
           <br />

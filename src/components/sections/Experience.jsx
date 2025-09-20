@@ -4,26 +4,15 @@ import { motion } from 'framer-motion';
 const Experience = ({ id }) => {
   const experiences = [
     {
-      title: "Java Full Stack Development Training & Internship",
-      company: "Globsyn Finishing School",
-      companyLink:"https://www.globsynfinishingschool.com/",
-      description: [
-        "Completed a 3 months technical training focused on Java Full Stack Development with ReactJS",
-        "Learned core Java alongside ReactJS, JDBC and frameworks such as Spring Boot and Hibernate",
-        "Developed real-world, full-stack web applications from the ground up",
-        "Integrated MySQL databases and deployed applications on local servers for hands-on practice"
-      ]
-    },
-    {
-      title: "AI SkillsBuild BootCamp Training",
-      company: "IBM",
-      companyLink:"https://www.credly.com/badges/66efc2a3-42de-444c-a082-78829463b900",
+      title: "AICTE Virtual Internship on Artificial Intelligence & Machine Learning",
+      company: "AICTE & Edunet Foundation (in collaboration with IBM SkillsBuild)",
+      companyLink:"https://drive.google.com/file/d/1PeQfTatVRNRBSavNgIwM9G0KDXKtPtl6/view?usp=sharing",
       type: "Certificate",
       description: [
-        "Completed a 6 hours training program focused on Artificial Intelligence fundamentals",
-        "Earned certification for completing \"Getting Started with Artificial Intelligence\" course",
-        "Completed additional courses: \"Mastering The Art of Prompting\", \"Large Language Model Basics\", and \"Introduction to Artificial Intelligence\"",
-        "Gained hands-on experience working with IBM Cloud platform and services"
+        "Completed a 6-week internship program focused on AI and ML fundamentals",
+        "Learned concepts of supervised learning, unsupervised learning, and introduction to deep learning",
+        "Worked on hands-on projects applying machine learning techniques on datasets",
+        "Earned the IBM Artificial Intelligence Fundamentals certification alongside the internship"
       ]
     }
   ];

@@ -78,7 +78,7 @@ function Navbar() {
                             )
                         )}
                         <motion.a
-                            href="/MdSarfarazAfzal.pdf"
+                            href="/Md_Sarfaraz_Afzal_Resume.pdf"
                             target="_blank"
                             variants={itemVariants}
                         >
@@ -116,7 +116,7 @@ function Navbar() {
                         )}
                         <div className="w-32 h-16">
                         <a
-                            href="/MdSarfarazAfzal.pdf"
+                            href="/Md_Sarfaraz_Afzal_Resume.pdf"
                             target="_blank"
                             className="text-2xl"
                             onClick={() => setIsMenuOpen(false)}

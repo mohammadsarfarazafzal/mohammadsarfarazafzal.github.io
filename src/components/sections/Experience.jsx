@@ -2,12 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Experience = ({ id }) => {
-  const experiences = [
+  const experiences = [{
+
+      title: "Java Full Stack Web Development Training & Internship",
+      company: "Globsyn Finishing School",
+      companyLink:"https://www.globsynfinishingschool.com/",
+      certificateLink:"https://drive.google.com/file/d/1GYChPxYXpVx5XDWa40nGxxf0OxRPLU9U/view?usp=sharing",
+      description: [
+        "Completed a 3 months technical training focused on Java Full Stack Development with ReactJS",
+        "Learned core Java alongside ReactJS, JDBC and frameworks such as Spring Boot and Hibernate",
+        "Developed real-world, full-stack web applications from the ground up",
+        "Integrated MySQL databases and deployed applications on local servers for hands-on practice"
+      ]
+    },
     {
       title: "AICTE Virtual Internship on Artificial Intelligence & Machine Learning",
       company: "AICTE & Edunet Foundation (in collaboration with IBM SkillsBuild)",
-      companyLink:"https://drive.google.com/file/d/1PeQfTatVRNRBSavNgIwM9G0KDXKtPtl6/view?usp=sharing",
-      type: "Certificate",
+      companyLink:"https://edunetfoundation.org/",
+      certificateLink:"https://drive.google.com/file/d/1PeQfTatVRNRBSavNgIwM9G0KDXKtPtl6/view?usp=sharing",
       description: [
         "Completed a 6-week internship program focused on AI and ML fundamentals",
         "Learned concepts of supervised learning, unsupervised learning, and introduction to deep learning",
@@ -38,12 +50,17 @@ const Experience = ({ id }) => {
               key={index}
               className="bg-[var(--color-card-bg)] p-6 rounded-lg hover:shadow-lg transition-all duration-300"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <h3 className="text-[var(--color-hover)] font-semibold text-lg">
+              <div className="flex flex-col md:flex-row md:justify-between mb-4">
+                <div className='flex flex-col'>
+                  <h3 className="text-[var(--color-hover)] font-semibold text-lg">
                   {experience.title}
                 </h3>
                 <span className="text-[var(--color-text)] opacity-75 hover:text-[var(--color-hover)]">
-                  <a href={experience.companyLink} target='_blank'>{experience.company} {experience.type && `• ${experience.type}`}</a>
+                  <a href={experience.companyLink} target='_blank'>{experience.company}</a>
+                </span>
+                </div>
+                <span className="text-[var(--color-text)] opacity-75 hover:text-[var(--color-hover)]">
+                  <a href={experience.certificateLink} target='_blank'>Certificate</a>
                 </span>
               </div>
               

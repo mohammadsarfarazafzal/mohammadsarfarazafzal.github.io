@@ -19,11 +19,11 @@ const Experience = ({ id }) => {
     {
       title: "Java Full Stack Web Development Training & Internship",
       company: "Globsyn Finishing School",
-      duration: "3 Months",
+      duration: "6 Weeks",
       companyLink: "https://www.globsynfinishingschool.com/",
       certificateLink: "https://drive.google.com/file/d/1GYChPxYXpVx5XDWa40nGxxf0OxRPLU9U/view?usp=sharing",
       description: [
-        "Completed technical training focused on Java Full Stack Development with ReactJS",
+        "Completed a technical training focused on Java Full Stack Development with ReactJS",
         "Learned core Java alongside ReactJS, JDBC and frameworks such as Spring Boot and Hibernate",
         "Developed real-world, full-stack web applications from the ground up",
         "Integrated MySQL databases and deployed applications on local servers for hands-on practice"
